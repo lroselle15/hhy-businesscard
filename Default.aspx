@@ -11,17 +11,19 @@
 <body>
 	<form id="form1" runat="server">
          What is your reason for requesting a new business card?
-         <br />            
-         <asp:RadioButton ID="PromotionOpt" runat="server" GroupName="reason" Text="Promotion" />
-         <asp:RadioButton ID="NewhireOpt" runat="server" GroupName="reason" Text="New hire" />
-         <asp:RadioButton ID="OtherOpt" runat="server" GroupName="reason" Text="Other" />
-                <br />  <br />    
-         <asp:TextBox ID="reasontxt" runat="server" TextMode="MultiLine" Rows="5" ></asp:TextBox>
+         <br />  
+		
+        <asp:RadioButtonList ID="reasonlist" Runat="server">
+            <asp:ListItem>Promotion</asp:ListItem>
+            <asp:ListItem>New Hire</asp:ListItem>
+            <asp:ListItem>Other <input type="text" name="othertext"></asp:ListItem>
+         </asp:RadioButtonList>
+		
                 <br /><br /> <hr>            
          What Company do you work for?            
                 <br />            
          <asp:DropDownList ID="ddList" runat="server">
-            <asp:ListItem Value="">--Select Month--</asp:ListItem>
+            <asp:ListItem Value="">--Select Company--</asp:ListItem>
             <asp:ListItem Value="1">Havas Health & You</asp:ListItem>
             <asp:ListItem Value="2">Chelsea H4B</asp:ListItem>
          </asp:DropDownList>          
