@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" Inherits="BusinessCard.Default" %>
 <!DOCTYPE html>
+
+
 <html>
 <head runat="server">
         <title></title>
